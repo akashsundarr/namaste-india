@@ -99,3 +99,32 @@ button:hover {
         font-size: 2rem;  /* Smaller font size for hero section heading */
     }
 }
+
+/* languages-of-india styles */
+.languages-of-india {
+    background-color: #F3E9D8;  /* Antique white background */
+    padding: 40px 20px;  /* Add padding for spacing */
+    border-radius: 8px;  /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+    margin: 20px 0;  /* Space above and below the section */
+}
+
+.languages-of-india .content {
+    max-width: 800px;  /* Limit the width of the content */
+    margin: auto;  /* Center the content */
+    text-align: left;  /* Align text to the left for readability */
+}
+
+.languages-of-india h2 {
+    font-size: 2.5rem;  /* Adjust heading size */
+    color: #040E2D;  /* Oxford blue for the heading */
+    margin-bottom: 20px;  /* Space below the heading */
+}
+
+.languages-of-india p {
+    font-size: 1.2rem;  /* Adjust paragraph size */
+    line-height: 1.6;  /* Increase line height for readability */
+    color: #040E2D;  /* Oxford blue for text */
+    margin-bottom: 15px;  /* Space below each paragraph */
+}
+

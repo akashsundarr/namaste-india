@@ -8,6 +8,7 @@
     <title><%= title %></title>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/hero-section.css">
+    <link rel="stylesheet" href="/css/explore-india.css">
 </head>
 <body>
 
@@ -21,50 +22,62 @@
             <a href="#explore" class="cta-button">Discover More</a>
         </div>
     </section>
-    <section class="vertical-gradient-section">
+    
+
+    <section class="blog-section">
         <div class="content">
             <h2>Explore Indian Culture</h2>
-            <p>Experience the rich heritage, traditions, and diversity of India through its art, festivals, and cuisines.</p>
+            <p>Delve into the rich heritage, traditions, and diversity of India through our latest articles on art, festivals, and cuisines.</p>
             
-            <div class="button-group">
-                <a href="/explore" class="img-btn">
+            <div class="blog-posts">
+                <article class="post">
                     <img src="/images/Butter-Chicken.jpg" alt="Cuisines">
-                    <span class="btn-text">Cuisines</span>
-                </a>
-                <a href="/places" class="img-btn">
+                    <h3><a href="/blog/cuisines">The Flavors of India: A Culinary Journey</a></h3>
+                    <p>Discover the diverse cuisines of India, from spicy curries to sweet desserts, and learn how to recreate these dishes at home.</p>
+                </article>
+                <article class="post">
                     <img src="/images/tfht1.jpg" alt="Places">
-                    <span class="btn-text">Places</span>
-                </a>
-                <a href="/culture" class="img-btn">
+                    <h3><a href="/blog/places">Top 10 Must-Visit Places in India</a></h3>
+                    <p>Explore the breathtaking landscapes and historical landmarks that make India a top travel destination.</p>
+                </article>
+                <article class="post">
                     <img src="/images/theyyam.jpg" alt="Culture">
-                    <span class="btn-text">Culture</span>
-                </a>
+                    <h3><a href="/culture">Understanding Indian Festivals: A Cultural Insight</a></h3>
+                    <p>Learn about the vibrant festivals celebrated across India and their significance in the cultural landscape.</p>
+                </article>
             </div>
         </div>
     </section>
 
-    <section class="vertical-gradient-section">
+    <section class="languages-of-india">
         <div class="content">
-            <h2>Explore Indian Culture</h2>
-            <p>Experience the rich heritage, traditions, and diversity of India through its art, festivals, and cuisines.</p>
+            <h2>Languages of India</h2>
+            <p>India has 28 states and seven territories, according to the World Health Organization. There is no official language in India, according to a Gujarat High Court ruling in 2010, though Hindi is the official language of the government and English is considered a subsidiary official language. The Constitution of India officially recognizes 23 official languages.</p>
             
-            <div class="button-group">
-                <a href="/explore" class="img-btn">
-                    <img src="/images/Butter-Chicken.jpg" alt="Cuisines">
-                    <span class="btn-text">Cuisines</span>
-                </a>
-                <a href="/places" class="img-btn">
-                    <img src="/images/tfht1.jpg" alt="Places">
-                    <span class="btn-text">Places</span>
-                </a>
-                <a href="/culture" class="img-btn">
-                    <img src="/images/theyyam.jpg" alt="Culture">
-                    <span class="btn-text">Culture</span>
-                </a>
-            </div>
+            <p>Many people living in India write in Devanagari script. In fact, it is a misconception that the majority of people in India speak Hindi. Though many people speak Hindi in India, at least 56 percent of Indian residents speak something other than Hindi, according to the CIA. Bengali, Marathi, Telugu, Tamil, Gujarati, and Urdu are some other languages spoken in the country.</p>
+            
+            <p>Sanskrit, an ancient Indo-European language, originated in Northern India. The origins of the language have been a point of debate among linguists. It shares many similarities with English, French, Farsi, and Russian languages.</p>
+            
+            <p>New DNA research in 2017 found that an Aryan migration may have introduced the beginnings of Sanskrit. "People have been debating the arrival of the Indo-European languages in India for hundreds of years," said study co-author Martin Richards, an archaeogeneticist at the University of Huddersfield in England. "There's been a very long-running debate about whether the Indo-European languages were brought from migrations from outside, which is what most linguists would accept, or if they evolved indigenously."</p>
+        </div>
+    </section>
+    <section class="explore-india">
+        <h2>Explore India</h2>
+        <div class="map-container">
+            <img src="/images/map-hero.png" alt="Dummy Map of India" class="dummy-map">
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search for a place..." class="search-input">
+            <button class="search-button">Search</button>
+        </div>
+        <div class="explore-buttons">
+            <button class="explore-button">Explore Festivals</button>
+            <button class="explore-button">Explore Cuisine</button>
+            <button class="explore-button">Explore Heritage Sites</button>
         </div>
     </section>
 
+   
     <%- include('partials/footer') %>
 
 </body>

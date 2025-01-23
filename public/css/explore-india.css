@@ -1,0 +1,76 @@
+/* explore-india styles */
+.explore-india {
+    background-color: #F3E9D8;  /* Light background color */
+    padding: 40px 20px;  /* Padding for spacing */
+    border-radius: 8px;  /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+    text-align: center;  /* Center text */
+}
+
+.explore-india h2 {
+    font-size: 2.5rem;  /* Heading size */
+    color: #040E2D;  /* Dark color for heading */
+    margin-bottom: 20px;  /* Space below heading */
+}
+
+.map-container {
+    margin-bottom: 20px;  /* Space below the map */
+}
+
+.dummy-map {
+    width: 100%;  /* Full width */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 8px;  /* Rounded corners for the image */
+}
+
+.search-container {
+    margin-bottom: 20px;  /* Space below the search bar */
+}
+
+.search-input {
+    padding: 10px;  /* Padding for input */
+    width: 300px;  /* Width of the input */
+    border: 1px solid #ccc;  /* Border for input */
+    border-radius: 4px;  /* Rounded corners */
+}
+
+.search-button {
+    padding: 10px 15px;  /* Padding for button */
+    background-color: #040E2D;  /* Dark background for button */
+    color: #F3E9D8;  /* Light text color */
+    border: none;  /* Remove border */
+    border-radius: 4px;  /* Rounded corners */
+    cursor: pointer;  /* Pointer cursor on hover */
+    margin-left: 10px;  /* Space between input and button */
+}
+
+.search-button:hover {
+    background-color: #C0275A;  /* Change color on hover */
+}
+
+.explore-buttons {
+    display: flex;  /* Flexbox for buttons */
+    justify-content: center;  /* Center buttons */
+    gap: 10px;  /* Space between buttons */
+}
+
+.explore-button {
+    padding: 10px 15px;  /* Padding for buttons */
+    background-color: #FEB117;  /* Yellow background for buttons */
+    color: #040E2D;  /* Dark text color */
+    border: none;  /* Remove border */
+    border-radius: 4px;  /* Rounded corners */
+    cursor: pointer;  /* Pointer cursor on hover */
+}
+
+.explore-button:hover {
+    background-color: #C0275A;  /* Change color on hover */
+}
+
+.dummy-map {
+    width: 100%;  /* Set width to 100% of the parent container */
+    max-width: 400px;  /* Set a maximum width for the image */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 8px;  /* Rounded corners for the image */
+    margin: 0 auto;  /* Center the image */
+}

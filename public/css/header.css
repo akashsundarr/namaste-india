@@ -38,15 +38,15 @@ header nav ul li a:hover {
 }
 
 /* header.css */
-
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #040E2D;  /* Oxford blue */
+    /*background-color: rgba(4, 14, 45, 0.7);  /* Semi-transparent Oxford blue */
     color: #F3E9D8;  /* Antique white */
     position: relative;
+    z-index: 2;  /* Ensure the header is above the hero section */
 }
 
 .logo h1 {
