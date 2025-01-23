@@ -38,9 +38,6 @@ app.get('/home', (req, res) => {
     res.render('index', { title: 'Indian Festivals: A Cultural Insight' });
 });
 
-app.get('/places', (req, res) => {
-    res.render('index', { title: 'Indian Festivals: A Cultural Insight' });
-});
 
 // Start the server
 const PORT = process.env.PORT || 3000;

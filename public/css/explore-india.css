@@ -1,8 +1,7 @@
 /* explore-india styles */
 .explore-india {
-    background-color: rgb(37, 150, 190);  /* Yellow background color */
+    background-color: #f9f9f9; ;  /* Oxford Blue background color */
     padding: 40px 20px;  /* Padding for spacing */
-    border-radius: 8px;  /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
     text-align: center;  /* Center text */
     position: relative;  /* Position relative for absolute children */
@@ -10,14 +9,13 @@
 
 .explore-india h2 {
     font-size: 2.5rem;  /* Heading size */
-    color: #040E2D;  /* Dark color for heading */
+    color: #040E2D;  /* Antique White for heading */
     margin-bottom: 20px;  /* Space below heading */
 }
 
 #map {
     height: 100%;  /* Set height to 100% of the parent container */
     width: 100%;  /* Full width */
-    border-radius: 8px;  /* Rounded corners */
 }
 
 .search-container {
@@ -33,8 +31,8 @@
 
 .search-button {
     padding: 10px 15px;  /* Padding for button */
-    background-color: #040E2D;  /* Dark background for button */
-    color: #F3E9D8;  /* Light text color */
+    background-color: #040E2D;  /* Oxford Blue background for button */
+    color: #F3E9D8;  /* Antique White text color */
     border: none;  /* Remove border */
     border-radius: 4px;  /* Rounded corners */
     cursor: pointer;  /* Pointer cursor on hover */
@@ -42,7 +40,7 @@
 }
 
 .search-button:hover {
-    background-color: #C0275A;  /* Change color on hover */
+    background-color: #FEB117;  /* Selective Yellow on hover */
 }
 
 .explore-buttons {
@@ -53,13 +51,13 @@
 
 .explore-button {
     padding: 10px 15px;  /* Padding for buttons */
-    background-color: #040E2D;  /* Change button background to match website color */
-    color: #F3E9D8;  /* Light text color */
+    background-color: #040E2D;  /* Oxford Blue background for buttons */
+    color: #F3E9D8;  /* Antique White text color */
     border: none;  /* Remove border */
     border-radius: 4px;  /* Rounded corners */
     cursor: pointer;  /* Pointer cursor on hover */
 }
 
 .explore-button:hover {
-    background-color: #C0275A;  /* Change color on hover */
+    background-color: #FEB117;  /* Selective Yellow on hover */
 }
