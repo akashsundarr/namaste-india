@@ -1,11 +1,82 @@
-<%# about.ejs %>
+<%# about.ejs %> <%- include('partials/header', { title: 'About ' }) %>
 
-<%- include('partials/header', { title: 'About Indian Culture' }) %>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="/css/about-info.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- 1. Introduction -->
+      <section id="introduction">
+        <h1>About Us</h1>
+        <p>
+          Welcome to Namaste India! We are dedicated tohelping travelers from
+          around the world immerse themselves in the rich tapestry of Indian
+          culture, history, and cuisine. Our mission is to bridge the gap
+          between visitors and the vibrant heritage of India, making your
+          journey not just a visit, but a memorable experience..
+        </p>
+      </section>
 
-<section>
-    <h2>About Indian Culture</h2>
-    <p>India's culture is a blend of ancient history, vibrant traditions, and modern influences.</p>
-    <img src="/images/culture.jpg" alt="Indian Culture">
-</section>
+      <!-- 4. What You Offer -->
+      <section id="offerings">
+        <h2>What We Offer</h2>
+        <p>
+          At Namaste India, we provide a wealth of resources to help you
+          navigate your journey through India. Here’s what you can expect:
+          Cultural Insights: Learn about the diverse traditions, festivals, and
+          customs that make India unique. From the colorful celebrations of
+          Diwali to the serene rituals of yoga, we cover it all. Historical
+          Context: Dive into the rich history of India, exploring ancient
+          civilizations, architectural marvels, and the stories that have shaped
+          our nation. Discover the significance of landmarks like the Taj Mahal
+          and the forts of Rajasthan. Culinary Adventures: Experience the
+          flavors of India through our curated guides on regional cuisines. From
+          the spicy curries of the South to the delectable sweets of the North,
+          we’ll help you navigate the culinary landscape and even share some
+          recipes to try at home! Travel Tips: Get practical advice on traveling
+          in India, including must-visit destinations, local etiquette, and tips
+          for navigating the vibrant streets of our cities.
+        </p>
+      </section>
 
-<%- include('partials/footer') %>
+      <!-- Get Involved Section -->
+      <section id="get-involved">
+        <h2>Get Involved</h2>
+        <p>
+          We believe that travel is a two-way street, and we encourage you to
+          engage with us! Connect with us on social media.
+        </p>
+
+        <!-- Instagram Link with PNG Image -->
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          aria-label="Follow us on Instagram"
+        >
+          <img
+            src="/images/insta.jpg"
+            alt="Follow us on Instagram"
+            class="social-icon"
+          />
+        </a>
+      </section>
+
+      <!-- 10. Contact Information -->
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>
+          Email:
+          <a href="mailto:info@yourorganization.com">hackathoncec1@gmail.com</a>
+        </p>
+        <p>Phone: <a href="tel:+1234567890">+91 1234567890</a></p>
+      </section>
+
+      <%- include('partials/footer') %>
+    </div>
+  </body>
+</html>
