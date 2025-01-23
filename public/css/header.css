@@ -36,3 +36,84 @@ header nav ul li a {
 header nav ul li a:hover {
     color: #C0275A;  /* Rose red */
 }
+
+/* header.css */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #040E2D;  /* Oxford blue */
+    color: #F3E9D8;  /* Antique white */
+    position: relative;
+}
+
+.logo h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2rem;  /* Adjust size as needed */
+    margin: 0;
+}
+
+nav {
+    flex-grow: 1;  /* Allow nav to take available space */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;  /* Align links to the right */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;  /* Space between links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #F3E9D8;  /* Antique white */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FEB117;  /* Selective yellow on hover */
+}
+
+/* Menu Toggle for Mobile */
+.menu-toggle {
+    display: none;  /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #F3E9D8;  /* Antique white */
+    margin: 4px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;  /* Hide links by default on mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;  /* Position below the header */
+        right: 0;
+        background-color: #040E2D;  /* Oxford blue */
+        width: 100%;
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: flex;  /* Show links when active */
+    }
+
+    .menu-toggle {
+        display: flex;  /* Show menu toggle on mobile */
+    }
+}

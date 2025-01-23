@@ -1,23 +1,49 @@
-/* hero-section.css */
 .hero-section {
+    position: relative;
     width: 100%;
-    height: 60vh;  /* Adjust height for better visibility */
-    background: url('/images/namaste-india-hero.jpg') no-repeat center center/cover;  /* Selective Yellow */
+    height: 60vh;  /* Adjust height as needed */
+    background: url('/images/namaste-india-hero.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #F3E9D8;  /* Antique white for text */
     text-align: center;
-    padding: 20px;  /* Add padding for spacing */
 }
-.hero-content h2 {
-    font-size: 3rem;  /* Change this value to make it larger */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   /* background-color: rgba(255, 193, 7, 0.5);  /* Semi-transparent saffron overlay */
+}
+
+.hero-content {
+    position: relative;  /* Position relative to overlay */
+    z-index: 1;  /* Ensure content is above the overlay */
+}
+
+h1 {
+    font-size: 3rem;  /* Adjust size as needed */
     margin-bottom: 10px;
 }
 
-.hero-content p {
-    font-size: 1.2rem;
-    color: #F3E9D8;  /* Antique white for paragraph text */
+h2 {
+    font-size: 1.5rem;  /* Adjust size as needed */
+    margin-bottom: 20px;
 }
 
+.cta-button {
+    background-color: #C0275A;  /* Rose red */
+    color: #F3E9D8;  /* Antique white */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;  /* Adjust size as needed */
+    transition: background-color 0.3s ease;
+}
 
+.cta-button:hover {
+    background-color: #FEB117;  /* Change to Selective Yellow on hover */
+}
