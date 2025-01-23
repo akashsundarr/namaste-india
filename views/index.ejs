@@ -1,9 +1,24 @@
-<%- include('partials/header', { title: 'Discover Indian Culture' }) %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/hero-section.css">
+</head>
+<body>
 
-<section>
-    <h2>Explore the Rich Heritage of India</h2>
-    <p>India is a diverse country with a rich cultural heritage, offering unique traditions, festivals, and history.</p>
-    <img src="/images/heritage.jpg" alt="Indian Heritage">
-</section>
+    <%- include('partials/header', { title: 'Discover Indian Culture' }) %>
 
-<%- include('partials/footer') %>
+    <section class="hero-section">
+        <div class="hero-content">
+            <h2>Namaste India</h2>
+            <p>Discover the beauty and heritage of India with us.</p>
+        </div>
+    </section>
+
+    <%- include('partials/footer') %>
+
+</body>
+</html>
