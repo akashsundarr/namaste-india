@@ -3,84 +3,57 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Website Title</title>
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-  />
   <link rel="stylesheet" href="/css/global.css" />
-  <!-- Main global styles -->
   <link rel="stylesheet" href="/css/culture.css" />
-  <!-- Styles for cultural highlights -->
 </head>
+<body>
 <section class="cultural-highlights">
   <h2>Cultural Insights</h2>
   <div class="festival-list">
     <div class="festival">
-      <img src="/images/diwali.jpeg.jpg" alt="Diwali" class="festival-image" />
       <h3>Diwali</h3>
-      <p>Date: November 12, 2023</p>
-      <p>
-        Significance: Known as the Festival of Lights, Diwali symbolizes the
-        victory of light over darkness and good over evil. It is celebrated with
-        fireworks, sweets, and the lighting of lamps.
-      </p>
+      <img src="/images/diwali.jpeg.jpg" alt="Diwali" class="festival-image" />
+      <p>Date: <span class="date" id="diwali-date"></span></p>
+      <button class="festival-button" onclick="logFestivalDate('diwali-date', 'Diwali')">Log Diwali Date</button>
+      <p>Significance: Known as the Festival of Lights, Diwali symbolizes the victory of light over darkness and good over evil. It is celebrated with fireworks, sweets, and the lighting of lamps.</p>
     </div>
     <div class="festival">
-      <img src="/images/holi.jpg" alt="Holi" class="festival-image" />
       <h3>Holi</h3>
-      <p>Date: March 25, 2024</p>
-      <p>
-        Significance: Holi, the Festival of Colors, marks the arrival of spring.
-        It is celebrated by throwing colored powders, singing, and dancing,
-        symbolizing love and the triumph of good over evil.
-      </p>
+      <img src="/images/holi.jpg" alt="Holi" class="festival-image" />
+      <p>Date: <span class="date" id="holi-date"></span></p>
+      <button class="festival-button" onclick="logFestivalDate('holi-date', 'Holi')">Log Holi Date</button>
+      <p>Significance: Holi, the Festival of Colors, marks the arrival of spring. It is celebrated by throwing colored powders, singing, and dancing, symbolizing love and the triumph of good over evil.</p>
     </div>
     <div class="festival">
-      <img
-        src="/images/eid-2024.jpg"
-        alt="Eid al-Fitr"
-        class="festival-image"
-      />
       <h3>Eid al-Fitr</h3>
-      <p>Date: April 10, 2024</p>
-      <p>
-        Significance: Eid al-Fitr marks the end of Ramadan, the Islamic holy
-        month of fasting. It is celebrated with prayers, feasting, and giving to
-        charity.
-      </p>
+      <img src="/images/eid-2024.jpg" alt="Eid al-Fitr" class="festival-image" />
+      <p>Date: <span class="date" id="eid-date"></span></p>
+      <button class="festival-button" onclick="logFestivalDate('eid-date', 'Eid al-Fitr')">Log Eid Date</button>
+      <p>Significance: Eid al-Fitr marks the end of Ramadan, the Islamic holy month of fasting. It is celebrated with prayers, feasting, and giving to charity.</p>
     </div>
     <div class="festival">
-      <img
-        src="/images/navaratri.jpeg.jpg"
-        alt="Navratri"
-        class="festival-image"
-      />
       <h3>Navratri</h3>
-      <p>Date: October 10 - October 18, 2024</p>
-      <p>
-        Significance: Navratri is a nine-night festival dedicated to the worship
-        of the goddess Durga. It includes fasting, dancing, and cultural
-        performances.
-      </p>
+      <img src="/images/navaratri.jpeg.jpg" alt="Navratri" class="festival-image" />
+      <p>Date: <span class="date" id="navaratri-date"></span></p>
+      <button class="festival-button" onclick="logFestivalDate('navaratri-date', 'Navratri')">Log Navratri Date</button>
+      <p>Significance: Navratri is a nine-night festival dedicated to the worship of the goddess Durga. It includes fasting, dancing, and cultural performances.</p>
     </div>
     <div class="festival">
-      <img
-        src="/images/thrissur pooram.jpg"
-        alt="Durga Puja"
-        class="festival-image"
-      />
       <h3>Thrissur Pooram</h3>
-      <p>Date: May 14 - May 15, 2024</p>
-      <p>
-        Thrissur Pooram is one of the most famous and grand festivals in Kerala,
-        celebrated in honor of Lord Shiva. The festival is known for its
-        spectacular procession of elaborately decorated elephants, traditional
-        percussion music (like the ‘Chenda’), and vibrant fireworks. It brings
-        together various temples in Thrissur for a grand display of cultural and
-        spiritual festivities.
-      </p>
+      <img src="/images/thrissur pooram.jpg" alt="Thrissur Pooram" class="festival-image" />
+      <p>Date: <span class="date" id="thrissur-date"></span></p>
+      <button class="festival-button" onclick="logFestivalDate('thrissur-date', 'Thrissur Pooram')">Log Thrissur Date</button>
+      <p>Significance: Thrissur Pooram is one of the most famous and grand festivals in Kerala, celebrated in honor of Lord Shiva. The festival is known for its spectacular procession of elaborately decorated elephants, traditional percussion music, and vibrant fireworks.</p>
     </div>
   </div>
 </section>
+
+<script>
+function logFestivalDate(elementId, festival) {
+    const currentDate = new Date().toLocaleDateString();
+    document.getElementById(elementId).textContent = currentDate; // Update the date in the <span>
+    console.log(`${festival} Date: ${currentDate}`);
+}
+</script>
 
 <%- include('partials/footer') %>

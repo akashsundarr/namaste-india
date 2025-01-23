@@ -1,0 +1,57 @@
+/* heritage-section styles */
+.heritage-section {
+    background-color: #F9F9F9; /* Light background for the heritage section */
+    padding: 40px 20px; /* Padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px 0; /* Space above and below the section */
+}
+
+.heritage-section h2 {
+    color: #5D3FD3; /* Color for the section heading */
+    margin-bottom: 30px; /* Increased space below the heading */
+    text-align: center; /* Center align heading */
+}
+
+.heritage-container {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: stretch; /* Stretch items to full width */
+}
+
+.heritage-item {
+    display: flex; /* Use flexbox for item layout */
+    background: #fff; /* White background for each heritage item */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 15px; /* Padding for items */
+    width: 100%; /* Full width for items */
+    max-width: 100%; /* Ensure it takes full width of the container */
+    margin: 20px 0; /* Space between items */
+}
+
+.heritage-image {
+    width: 40%; /* Set width to 40% of the item */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.heritage-text {
+    display: flex; /* Flexbox for text layout */
+    flex-direction: column; /* Stack text elements vertically */
+    justify-content: center; /* Center align text vertically */
+}
+
+.heritage-item h3 {
+    color: #C0275A; /* Color for heritage item titles */
+    margin: 10px 0;
+    padding-right: 10px; /* Space above and below titles */
+}
+
+.heritage-item p {
+    color: #444; /* Darker gray for readability */
+    font-size: 1rem; /* Font size for descriptions */
+    line-height: 1.5; /* Line height for better readability */
+    margin-top: 10px; /* Add space between paragraphs and the title */
+}

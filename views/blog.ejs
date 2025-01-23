@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/blog.css">
+</head>
+<body>
+    <%- include('partials/header', { title: 'Blog' }) %>
+    
+    <section class="blog-section">
+        <h2>Share Your Thoughts</h2>
+        <form class="blog-form">
+            <input type="text" placeholder="Your Name" required class="form-input">
+            <input type="text" placeholder="Blog Title" required class="form-input">
+            <textarea placeholder="Write your blog here..." required class="form-textarea"></textarea>
+            <button type="submit" class="submit-button">Submit Blog</button>
+        </form>
+    
+        <h3>Customer Ratings</h3>
+        <div class="ratings">
+            <div class="rating-item">
+                <h4>Exploring Dubai: A Journey of a Lifetime</h4>
+                <p>Rating: ★★★★★ (5/5)</p>
+                <p><strong>Dasan:</strong> "Our trip to Dubai was unforgettable! The website helped us find the best places to visit and stay. Highly recommend!"</p>
+            </div>
+            <div class="rating-item">
+                <h4>Kerala to Dubai: A Cultural Exchange</h4>
+                <p>Rating: ★★★★☆ (4/5)</p>
+                <p><strong>Vijan:</strong> "I had a great time exploring the markets and trying new foods. Thanks to the website for the tips!"</p>
+            </div>
+            <div class="rating-item">
+                <h4>Traveling with Friends</h4>
+                <p>Rating: ★★★★★ (5/5)</p>
+                <p><strong>Garfoorka:</strong> "I helped my friends plan their trip to Dubai using this website. It was easy to navigate and very helpful!"</p>
+            </div>
+        </div>
+    
+        <h3>Other Blogs</h3>
+        <div class="other-blogs">
+            <article class="blog-post">
+                <h4><a href="/blog/post1">Understanding Indian Festivals</a></h4>
+                <p>A deep dive into the various festivals celebrated across India.</p>
+            </article>
+            <article class="blog-post">
+                <h4><a href="/blog/post2">The Flavors of India</a></h4>
+                <p>Exploring the diverse cuisines that make Indian food unique.</p>
+            </article>
+            <!-- Add more blog posts as needed -->
+        </div>
+    </section>
+
+
+
+   
+</body>
+<%- include('partials/footer') %>
+</html>

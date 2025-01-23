@@ -1,0 +1,102 @@
+/* blog-section styles */
+.blog-section {
+    background-color: #F9F9F9; /* Light background for the blog section */
+    padding: 40px 20px; /* Padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.blog-section .content {
+    max-width: 1200px; /* Limit the width of the content */
+    margin: auto; /* Center the content */
+    text-align: center; /* Center the text */
+}
+
+.blog-section h2 {
+    font-size: 2.5rem; /* Adjust heading size */
+    margin-bottom: 10px;
+    color: #333; /* Dark gray for the heading */
+}
+
+.blog-section p {
+    font-size: 1.2rem; /* Adjust paragraph size */
+    margin-bottom: 30px;
+    color: #666; /* Lighter gray for the paragraph */
+}
+
+.blog-posts {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: space-between; /* Space out the posts */
+}
+
+.post {
+    background-color: #040E2D; /* Oxford blue background for posts */
+    color: #F3E9D8; /* Antique white text */
+    border-radius: 8px; /* Rounded corners */
+    margin: 10px; /* Space between posts */
+    padding: 20px; /* Padding inside each post */
+    width: calc(30% - 20px); /* Adjust width for three columns */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    transition: transform 0.3s, opacity 0.3s; /* Smooth transition for hover effect */
+    opacity: 0; /* Start hidden for entrance animation */
+    transform: translateY(20px); /* Start slightly below */
+    animation: fadeInUp 0.8s forwards; /* Entrance animation */
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Move to original position */
+    }
+}
+
+.post img {
+    width: 100%; /* Make images responsive */
+    border-radius: 8px; /* Rounded corners for images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.post h3 {
+    font-size: 1.5rem; /* Adjust title size */
+    margin: 10px 0; /* Space around title */
+    color: #F3E9D8; /* Antique white for title */
+}
+
+.post p {
+    font-size: 1rem; /* Adjust description size */
+    color: #E0E0E0; /* Slightly lighter gray for description */
+}
+
+.post:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .post {
+        width: calc(100% - 20px); /* Full width on smaller screens */
+    }
+}
+
+.order-form input[type="text"],
+.order-form input[type="number"],
+.order-form select {
+    padding: 10px; /* Padding for inputs */
+    border-radius: 4px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light gray border */
+    width: 100%; /* Full width of the container */
+    max-width: 300px; /* Optional: Limit the maximum width */
+    margin: 10px 0; /* Space around inputs */
+    background-color: #F3E9D8; /* Light background color for inputs */
+    color: #333; /* Dark text color */
+    font-size: 1rem; /* Font size */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.order-form input[type="text"]:focus,
+.order-form input[type="number"]:focus,
+.order-form select:focus {
+    border-color: #5D3FD3; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}

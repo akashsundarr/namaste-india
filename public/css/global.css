@@ -1,4 +1,15 @@
 /* global.css */
+/* Apply initial styling for the articles */
+.blog-section .post {
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition only transform and box-shadow */
+}
+
+/* Apply the hover effect */
+.blog-section .post:hover {
+    transform: translateY(-5px) scale(1.05); /* Slightly move and scale up */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle box-shadow */
+}
 
 /* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&family=Rubik:wght@800&display=swap');
@@ -23,11 +34,12 @@ a {
     text-decoration: none;
     color: #FEB117;  /* Selective yellow */
     font-weight: bold;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, transform 0.3s ease; /* Added transform for scaling */
 }
 
 a:hover {
     color: #C0275A;  /* Rose red */
+    transform: scale(1.05); /* Scale effect on hover */
 }
 
 /* Container for sections */
@@ -46,10 +58,12 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for scaling */
 }
 
 button:hover {
     background-color: #C0275A;  /* Rose red */
+    transform: scale(1.05); /* Scale effect on hover */
 }
 
 /* Responsive Design */
@@ -77,10 +91,6 @@ button:hover {
     }
 }
 
-/* global.css */
-
-/* Existing styles... */
-
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .container {
@@ -106,7 +116,6 @@ button:hover {
     padding: 40px 20px;  /* Add padding for spacing */
     border-radius: 8px;  /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
-      /* Space above and below the section */
 }
 
 .languages-of-india .content {
@@ -126,5 +135,11 @@ button:hover {
     line-height: 1.6;  /* Increase line height for readability */
     color: #040E2D;  /* Oxford blue for text */
     margin-bottom: 15px;  /* Space below each paragraph */
+}
+
+html, body {
+    height: 100%; /* Ensure the body takes the full height */
+    margin: 0; /* Remove default margin */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 

@@ -1,0 +1,96 @@
+.demo-shop {
+    background-color: #F9F9F9; /* Light background for the section */
+    padding: 40px 20px; /* Padding for spacing */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px 0; /* Space above and below the section */
+}
+
+.demo-shop h2 {
+    font-size: 2.5rem; /* Adjust heading size */
+    color: #5D3FD3; /* Purple for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Center align heading */
+}
+
+.food-display {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: center; /* Center the items */
+}
+
+.food-item {
+    background-color: #FFFFFF; /* White background for each food item */
+    padding: 20px; /* Padding inside each item */
+    margin: 10px; /* Space between items */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center align text */
+    width: 200px; /* Fixed width for items */
+}
+
+.food-image {
+    width: 40px; /* Fixed width for the image */
+    height: 40px; /* Fixed height for the image */
+     /* Cover the area while maintaining aspect ratio */
+    border-radius: 4px; /* Rounded corners for images */
+}
+
+.food-item h3 {
+    font-size: 1.5rem; /* Adjust title size */
+    margin: 10px 0; /* Space above and below titles */
+    color: #333; /* Dark gray for the title */
+}
+
+.food-item p {
+    font-size: 1rem; /* Adjust paragraph size */
+    margin: 5px 0; /* Space above and below paragraphs */
+    color: #666; /* Lighter gray for the paragraph */
+}
+.price {
+    font-size: 1.2rem; /* Price size */
+    color: #D9534F; /* Red for price */
+    margin: 10px 0; /* Space around price */
+}
+
+.order-button {
+    background-color: #5D3FD3; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding for button */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.order-section {
+    margin-top: 40px; /* Space above order section */
+    text-align: center; /* Center align text */
+}
+
+.order-form {
+    display: inline-block; /* Center the form */
+    margin-top: 20px; /* Space above form */
+}
+
+.order-form label {
+    display: block; /* Block display for labels */
+    margin: 10px 0; /* Space around labels */
+}
+
+.order-form select,
+.order-form input {
+    padding: 10px; /* Padding for inputs */
+    border-radius: 4px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border for inputs */
+    width: 200px; /* Fixed width for inputs */
+}
+
+.submit-order {
+    background-color: #5D3FD3; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding for button */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 10px; /* Space above button */
+}

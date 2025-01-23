@@ -1,45 +1,61 @@
-/* cultural-highlights styles */
-.cultural-highlights {
-    background-color: #F3E9D8;  /* Antique white background */
-    padding: 40px 20px;  /* Add padding for spacing */
-    border-radius: 8px;  /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
-    margin: 20px 0;  /* Space above and below the section */
-}
+/* culture.css */
 
-.cultural-highlights h2 {
-    font-size: 2.5rem;  /* Adjust heading size */
-    color: #040E2D;  /* Oxford blue for the heading */
-    margin-bottom: 20px;  /* Space below the heading */
-}
-
+/* Festival List Styles */
 .festival-list {
     display: flex;
-    flex-direction: column;  /* Stack festivals vertically */
+    flex-direction: column; /* Stack festivals vertically */
+    align-items: center; /* Center align items */
+    margin: 20px 0; /* Space above and below the section */
 }
 
+/* Festival Item Styles */
 .festival {
-    background-color: #FEB117;  /* Selective yellow background for each festival */
-    color: #040E2D;  /* Oxford blue text */
-    padding: 20px;  /* Padding inside each festival */
-    margin-bottom: 15px;  /* Space between festivals */
-    border-radius: 8px;  /* Rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+    background-color: #FFFFFF; /* White background for each festival */
+    padding: 15px; /* Padding for spacing */
+    margin: 10px; /* Space between festivals */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 90%; /* Responsive width */
+    max-width: 600px; /* Limit max width */
+    opacity: 0; /* Start hidden for entrance animation */
+    transform: translateY(20px); /* Start slightly below */
+    animation: fadeInUp 0.8s forwards; /* Entrance animation */
 }
 
+@keyframes fadeInUp {
+    to {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* Move to original position */
+    }
+}
+
+/* Festival Image Styles */
 .festival-image {
-    width: 100px;  /* Set image width */
-    height: 100px;  /* Set image height */
-    margin: 0 auto 10px;  /* Center image and add space below */
-    border-radius: 50%;  /* Make image a circle */
+    width: 100%; /* Full width for responsive images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
 }
 
-.festival h3 {
-    font-size: 1.8rem;  /* Adjust title size */
-    margin: 0 0 10px;  /* Space below the title */
+/* Button Styles */
+.festival-button {
+    background-color: #FEB117; /* Selective yellow */
+    color: #040E2D; /* Oxford blue */
+    border: none;
+    padding: 8px 16px; /* Smaller padding for minimal look */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 14px; /* Smaller font size */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform for scaling */
 }
 
-.festival p {
-    font-size: 1rem;  /* Adjust paragraph size */
-    margin: 5px 0;  /* Space above and below paragraphs */
+.festival-button:hover {
+    background-color: #C0275A; /* Rose red on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .festival {
+        width: 95%; /* Adjust width for smaller screens */
+    }
 }

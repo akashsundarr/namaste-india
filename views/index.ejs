@@ -6,8 +6,10 @@
     <title><%= title %></title>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/hero-section.css">
-    <link rel="stylesheet" href="/css/explore-india.css">
+    
+    <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" /> 
+
 </head>
 <body>
 
@@ -18,18 +20,18 @@
         <div class="hero-content">
             <h1>Experience the Vibrance of Indian Culture</h1>
             <h2>Explore Festivals, Cuisine, and Traditions</h2>
-            <a href="#explore" class="cta-button">Discover More</a>
+          <%#   <a href="https://explore-india.net/" class="cta-button">Discover More</a> %>
         </div>
     </section>
     
     <section class="blog-section">
-        <div class="content">
+        <div class="content animated-content">
             <h2>Explore Indian Culture</h2>
             <p>Delve into the rich heritage, traditions, and diversity of India through our latest articles on art, festivals, and cuisines.</p>
             <div class="blog-posts">
                 <article class="post">
                     <img src="/images/Butter-Chicken.jpg" alt="Cuisines">
-                    <h3><a href="/blog/cuisines">The Flavors of India: A Culinary Journey</a></h3>
+                    <h3><a href="/cuisines">The Flavors of India: A Culinary Journey</a></h3>
                     <p>Discover the diverse cuisines of India, from spicy curries to sweet desserts, and learn how to recreate these dishes at home.</p>
                 </article>
                 <article class="post">
@@ -63,11 +65,11 @@
             <input type="text" placeholder="Search for a place..." class="search-input" id="search-input">
             <button class="search-button" id="search-button">Search</button>
         </div>
-        <div class="explore-buttons">
-            <button class="explore-button">Explore Festivals</button>
-            <button class="explore-button">Explore Cuisine</button>
-            <button class="explore-button">Explore Heritage Sites</button>
-        </div>
+         <div class="explore-buttons">
+            <button class="explore-button" onclick="location.href='/culture'">Explore Festivals</button>
+            <button class="explore-button" onclick="location.href='cuisine.html'">Explore Cuisine</button>
+            <button class="explore-button" onclick="location.href='/heritage'">Explore Heritage Sites</button>
+        </div> 
     </section>
 
     <section class="testimonials">
