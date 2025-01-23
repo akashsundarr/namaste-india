@@ -1,0 +1,12 @@
+/* footer.css */
+
+/* Footer styles */
+footer {
+    background: #040E2D;  /* Oxford blue */
+    color: #F3E9D8;  /* Antique white */
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
