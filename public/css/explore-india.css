@@ -1,10 +1,11 @@
 /* explore-india styles */
 .explore-india {
-    background-color: #F3E9D8;  /* Light background color */
+    background-color: rgb(37, 150, 190);  /* Yellow background color */
     padding: 40px 20px;  /* Padding for spacing */
     border-radius: 8px;  /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
     text-align: center;  /* Center text */
+    position: relative;  /* Position relative for absolute children */
 }
 
 .explore-india h2 {
@@ -13,18 +14,14 @@
     margin-bottom: 20px;  /* Space below heading */
 }
 
-.map-container {
-    margin-bottom: 20px;  /* Space below the map */
-}
-
-.dummy-map {
+#map {
+    height: 100%;  /* Set height to 100% of the parent container */
     width: 100%;  /* Full width */
-    height: auto;  /* Maintain aspect ratio */
-    border-radius: 8px;  /* Rounded corners for the image */
+    border-radius: 8px;  /* Rounded corners */
 }
 
 .search-container {
-    margin-bottom: 20px;  /* Space below the search bar */
+    margin: 20px 0;  /* Space above and below the search bar */
 }
 
 .search-input {
@@ -56,8 +53,8 @@
 
 .explore-button {
     padding: 10px 15px;  /* Padding for buttons */
-    background-color: #FEB117;  /* Yellow background for buttons */
-    color: #040E2D;  /* Dark text color */
+    background-color: #040E2D;  /* Change button background to match website color */
+    color: #F3E9D8;  /* Light text color */
     border: none;  /* Remove border */
     border-radius: 4px;  /* Rounded corners */
     cursor: pointer;  /* Pointer cursor on hover */
@@ -65,12 +62,4 @@
 
 .explore-button:hover {
     background-color: #C0275A;  /* Change color on hover */
-}
-
-.dummy-map {
-    width: 100%;  /* Set width to 100% of the parent container */
-    max-width: 400px;  /* Set a maximum width for the image */
-    height: auto;  /* Maintain aspect ratio */
-    border-radius: 8px;  /* Rounded corners for the image */
-    margin: 0 auto;  /* Center the image */
 }
