@@ -1,118 +1,66 @@
-/* about-info.css */
-
-/* Container for sections */
-.container {
-    max-width: 100%;
-    margin: auto;
-    padding: 10px; /* Reduced padding for a tighter layout */
-}
-
-/* General Styles */
-body {
-    font-family: 'Poppins', sans-serif; /* Update font to match */
-    line-height: 1.6;
-    background-color: #F3E9D8; /* Light background similar to the image */
-    color: #333; /* Text color similar to the provided design */
-}
-
-/* Section Styles */
-section {
-    background: #FFFFFF; /* Changed to white for better contrast */
-    padding: 15px; /* Reduced padding */
-    margin: 15px 0; /* Reduced margin */
+.about-section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f9f9f9;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
-    text-align: center; /* Center align content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-/* Headings */
-h1, h2, h3 {
-    color: #4A90E2; /* Changed to a calming blue color */
+.section-title {
+    font-size: 28px;
+    color: #5D3FD3;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.offerings-list {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+}
+
+.offerings-list li {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #444;
+}
+
+.offerings-list li strong {
+    color: #222;
+}
+
+.contact-info {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #ff9900;
+    text-decoration: none;
     font-weight: bold;
 }
 
-h1 {
-    font-size: 2.4rem; /* Slightly larger for emphasis */
-    margin-bottom: 8px; /* Reduced margin */
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 8px; /* Reduced margin */
-}
-
-h3 {
-    font-size: 1.6rem; /* Slightly larger for emphasis */
-    margin: 8px 0; /* Reduced margin */
-}
-
-/* Paragraph Styling */
-p {
-    font-size: 1.1rem;
-    color: #555; /* Darker gray for readability */
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-/* Social Icons */
-.social-links {
-    display: grid; /* Changed to grid layout */
-    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* Responsive grid */
-    justify-items: center; /* Center items in grid */
-    gap: 15px; /* Reduced gap */
-    margin-top: 15px; /* Reduced margin */
+.contact-info a:hover {
+    text-decoration: underline;
 }
 
 .social-icon {
-    width: 60px;
-    height: 60px;
-    transition: transform 0.3s ease, filter 0.3s ease;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .social-icon:hover {
-    transform: scale(1.1); /* Slightly reduced scale on hover */
-    filter: brightness(1.1); /* Slightly reduced brightness on hover */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 2rem; /* Adjusted for smaller screens */
-    }
-
-    h2 {
-        font-size: 1.6rem; /* Adjusted for smaller screens */
-    }
-
-    p {
-        font-size: 1rem; /* Adjusted for smaller screens */
-    }
-
-    .social-icon {
-        width: 50px; /* Adjusted for smaller screens */
-        height: 50px; /* Adjusted for smaller screens */
-    }
-}
-
-h1 {
-    font-size: 1.8rem;
-}
-
-h2 {
-    font-size: 1.5rem;
-}
-
-p {
-    font-size: 1rem;
-}
-
-.social-icon {
-    width: 50px;
-    height: 50px;
+    transform: scale(1.1);
 }

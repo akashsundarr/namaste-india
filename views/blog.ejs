@@ -9,9 +9,44 @@
 </head>
 <body>
     <%- include('partials/header', { title: 'Blog' }) %>
-    
 
-   
+    <section class="blog-section">
+        <h2>Share Your Blog</h2>
+        <form class="blog-form">
+            <input type="text" placeholder="Your Name" required class="form-input">
+            <input type="text" placeholder="Blog Title" required class="form-input">
+            <textarea placeholder="Write your blog here..." required class="form-textarea"></textarea>
+            <button type="submit" class="submit-button">Submit Blog</button>
+        </form>
+
+        <h3>Recent Blogs</h3>
+        <div class="blog-list">
+            <article class="blog-post">
+                <h4>The Beauty of Indian Festivals</h4>
+                <p><strong>By:</strong> Akash Sundar</p>
+                <p>India's festivals are vibrant and full of life. Each festival brings unique traditions and unites people in celebration.</p>
+            </article>
+
+            <article class="blog-post">
+                <h4>Exploring the Cuisine of South India</h4>
+                <p><strong>By:</strong> Ansaf Shan</p>
+                <p>South Indian food is a delightful journey with flavors ranging from tangy sambar to crispy dosas. A must-try for food lovers!</p>
+            </article>
+
+            <article class="blog-post">
+                <h4>My First Trip to Rajasthan</h4>
+                <p><strong>By:</strong> Anfaal Kasim</p>
+                <p>Visiting Rajasthan was a dream come true! The palaces, forts, and colorful culture left me in awe. Highly recommend a visit.</p>
+            </article>
+
+            <article class="blog-post">
+                <h4>Indian Handicrafts: A Timeless Tradition</h4>
+                <p><strong>By:</strong> Athul Krishna A</p>
+                <p>The art of Indian handicrafts showcases the country's rich heritage. From pottery to embroidery, each piece tells a story.</p>
+            </article>
+        </div>
+    </section>
+
 </body>
 <%- include('partials/footer') %>
 </html>
