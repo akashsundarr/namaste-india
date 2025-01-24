@@ -59,3 +59,7 @@
         width: 95%; /* Adjust width for smaller screens */
     }
 }
+
+h2 {
+    text-align: center;
+}
