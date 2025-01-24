@@ -26,13 +26,15 @@
     border-radius: 4px; /* Rounded corners */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     text-align: center; /* Center align text */
-    width: 200px; /* Fixed width for items */
+    width: 220px; /* Adjusted width for items */
 }
 
 .food-image {
-    width: 40px; /* Fixed width for the image */
-    height: 40px; /* Fixed height for the image */
-     /* Cover the area while maintaining aspect ratio */
+    width: 100%; /* Full width of the item */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 700px; /* Maximum width for the image */
+    max-height: 400px; /* Maximum height for the image */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
     border-radius: 4px; /* Rounded corners for images */
 }
 
@@ -47,6 +49,7 @@
     margin: 5px 0; /* Space above and below paragraphs */
     color: #666; /* Lighter gray for the paragraph */
 }
+
 .price {
     font-size: 1.2rem; /* Price size */
     color: #D9534F; /* Red for price */

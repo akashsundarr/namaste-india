@@ -1,14 +1,14 @@
 <%- include('partials/header', { title: 'Indian Heritage' }) %>
 
 <head>
-  <link rel="stylesheet" href="/css/heritage.css" />
+  <link rel="stylesheet" href="/css/cuisines.css" />
   <link rel="stylesheet" href="/css/main.css" />
   <link rel="stylesheet" href="/css/hero-section.css" />
   <link rel="stylesheet" href="/css/global.css" />
 </head>
 <body>
   <section class="demo-shop">
-    <h2>Indian Cuisines Shop</h2>
+    <h2>Indian Cuisines </h2>
     <div class="food-display">
       <div class="food-item">
         <img
@@ -18,23 +18,20 @@
         />
         <h3>Butter Chicken</h3>
         <p>A rich and creamy tomato-based curry with tender chicken pieces.</p>
-        <span class="price">$12.99</span>
-        <button class="order-button">Order Now</button>
+        
       </div>
       <div class="food-item">
         <img
-          src="https://via.placeholder.com/200"
+          src="/images/paneer-tikka.jpg"
           alt="Paneer Tikka"
           class="food-image"
         />
         <h3>Paneer Tikka</h3>
         <p>Grilled marinated paneer cubes served with mint chutney.</p>
-        <span class="price">$9.99</span>
-        <button class="order-button">Order Now</button>
-      </div>
+        </div>
       <div class="food-item">
         <img
-          src="https://via.placeholder.com/200"
+        src="/images/biriyani.jpg"
           alt="Biryani"
           class="food-image"
         />
@@ -43,37 +40,19 @@
           Aromatic rice dish cooked with spices and marinated meat or
           vegetables.
         </p>
-        <span class="price">$14.99</span>
-        <button class="order-button">Order Now</button>
-      </div>
+          </div>
       <div class="food-item">
         <img
-          src="https://via.placeholder.com/200"
+          src="/images/samosa.jpg"
           alt="Samosa"
           class="food-image"
         />
         <h3>Samosa</h3>
         <p>Deep-fried pastry filled with spiced potatoes and peas.</p>
-        <span class="price">$5.99</span>
-        <button class="order-button">Order Now</button>
-      </div>
+          </div>
     </div>
 
-    <div class="order-section">
-      <h3>Order Your Favorite Dish</h3>
-      <form class="order-form">
-        <label for="food-select">Choose a dish:</label>
-        <select id="food-select">
-          <option value="butter-chicken">Butter Chicken</option>
-          <option value="paneer-tikka">Paneer Tikka</option>
-          <option value="biryani">Biryani</option>
-          <option value="samosa">Samosa</option>
-        </select>
-        <label for="quantity">Quantity:</label>
-        <input type="number" id="quantity" name="quantity" min="1" value="1" />
-        <button type="submit" class="submit-order">Place Order</button>
-      </form>
-    </div>
+    
   </section>
 </body>
 
