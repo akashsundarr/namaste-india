@@ -1,5 +1,11 @@
-/* Ensure the body and html take full height */
-* travel-advice styles */
+/* travel-advice styles */
+.travel-advice {
+    background-color: #F9F9F9; /* Light background for the section */
+    padding: 40px 20px; /* Padding for spacing */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px 0; /* Space above and below the section */
+}
 
 .travel-advice h2 {
     font-size: 2.5rem; /* Adjust heading size */
@@ -10,8 +16,7 @@
 
 .advice-container {
     display: flex; /* Flexbox for layout */
-    flex-direction: column;
-     /* Stack items vertically */
+    flex-direction: column; /* Stack items vertically */
 }
 
 .advice-item {
@@ -74,25 +79,4 @@
     font-size: 1rem; /* Font size for list items */
     color: #444; /* Color for list items */
     margin-bottom: 5px; /* Space between list items */
-}
-
-
-/* Travel advice section styling */
-.travel-advice {
-    background-color: #F9F9F9; /* Light background */
-    padding: 40px 20px; /* Padding for spacing */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    max-width: 800px; /* Maximum width for content */
-    width: 100%; /* Full width up to the max-width */
-    margin: 0 auto; /* Center on smaller screens */
-    text-align: center; /* Center text alignment */
-    box-sizing: border-box; /* Ensure padding is included in width */
-}
-
-/* Ensure responsive design */
-@media (max-width: 768px) {
-    .travel-advice {
-        padding: 20px; /* Adjust padding for smaller screens */
-    }
 }
